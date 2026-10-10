@@ -2,7 +2,10 @@
 FrontendFix is a plugin that enhances, improves and makes you enjoy GTA2 on modern machines.
 
 ## Compatibility:
-Currently compatible only with GTA2 9.6.0.0
+The original release targets GTA2 9.6.0.0. This branch includes rendering fixes
+tested with GTA2 v11.44 and the locally ported Plugin SDK. See
+[rendering fixes and validation](docs/rendering-fixes.md) for build requirements
+and the scope of testing.
 
 ## Features: 
  #### UI changes:

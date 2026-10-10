@@ -1,7 +1,7 @@
 #pragma once
+#include "FrontendSprite.h"
 #include "common.h"
 #include "CVector.h"
-#include "CSprite2d.h"
 
 class CRGBA;
 class CRect;
@@ -91,7 +91,7 @@ static void DrawTriangle(float x, float y, float w, float h, CVector2D center, f
     posn[3].x = x; posn[3].y = y + (h * 0.5f);	posn[2].x = x; posn[2].y = y + (h * 0.5f);
 
     RotateVertices(posn, x + (w * center.x), y + (h * center.y), angle);
-    CSprite2d::Draw2DPolygon(posn[0].x, posn[0].y, posn[1].x, posn[1].y, posn[2].x, posn[2].y, posn[3].x, posn[3].y, CRGBA(col));
+    FrontendSprite::Draw2DPolygon(posn[0].x, posn[0].y, posn[1].x, posn[1].y, posn[2].x, posn[2].y, posn[3].x, posn[3].y, CRGBA(col));
 }
 
 static void DrawSATarget(float x, float y, float dist, float rotationMult, CRGBA const& col) {
